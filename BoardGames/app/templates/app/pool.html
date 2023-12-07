@@ -1,0 +1,138 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load static %}
+{% if form != None %}
+<h2>Оставьте, пожалуйста, ваше мнение о нас</h2>
+<div class="forma">
+    <form method="post">
+        {% csrf_token %}
+        <label for="{{form.name.id_for_label}}">{{form.name.label}}:</label>
+        {{form.name}}<br><br>
+        <label for="{{form.secondname.id_for_label}}">{{form.secondname.label}}:</label>
+        {{form.secondname}}<br>
+        <label for="{{form.city.id_for_label}}">{{form.city.label}}:</label>
+        {{form.city}}<br>
+        <label for="{{form.shop.id_for_label}}">{{form.shop.label}}:</label><br>
+        {{form.shop}}<br><br>
+        <label for="{{form.rate.id_for_label}}">{{form.rate.label}}:</label><br>
+        {{form.rate}}<br><br>
+        <label for="{{form.notice.id_for_label}}">{{form.notice.label}}:</label>
+        {{form.notice}}<br><br>
+        <label for="{{form.email.id_for_label}}">{{form.email.label}}:</label>
+        {{form.email}}<br><br>
+        <label for="{{form.comments.id_for_label}}">{{form.comments.label}}:</label>
+        {{form.comments}}<br><br>
+        <input type="submit" value="Отправить" class="button" id="bbutton">
+    </form>
+</div>
+{% else %}
+<h2>Благодарим за ваш отзыв</h2>
+<h3>Вы сообщили:</h3>
+<ul>
+    <li><span>Имя:</span>{{data.name}}</li>
+    <li><span>Фамилия:</span>{{data.secondname}}</li>
+    <li><span>Город:</span>{{data.city}}</li>
+    <li><span>Магазин в городе:</span>{{data.shop}}</li>
+    <li><span>Ваша оценка:</span>{{data.rate}}</li>
+    <li><span>Ваш e-mail:</span>{{data.email}}</li>
+    <li><span>Дополнительный комментарий:</span>{{data.comments}}</li>
+</ul>
+
+{% endif %}
+<script>
+
+    function p_button() {
+
+        $('#bbutton').css('background-color', 'red');
+        $('#bbutton').css('color', 'black');
+
+    }
+
+    function dp_button() {
+
+        $('#bbutton').css('background-color', 'black');
+        $('#bbutton').css('color', 'white');
+
+    }
+
+    $('#bbutton').mouseover(p_button);
+    $('#bbutton').mouseout(dp_button);
+
+    function textarea_name_on() {
+
+        $('#id_name').css('background-color', '#adabaf');
+
+    }
+
+
+    function textarea_name_out() {
+
+        $('#id_name').css('background-color', 'white');
+
+    }
+    $('#id_name').focus(textarea_name_on);
+    $('#id_name').blur(textarea_name_out);
+
+    function textarea_secondname_on() {
+
+        $('#id_secondname').css('background-color', '#adabaf');
+
+    }
+
+
+    function textarea_secondname_out() {
+
+        $('#id_secondname').css('background-color', 'white');
+
+    }
+    $('#id_secondname').focus(textarea_secondname_on);
+    $('#id_secondname').blur(textarea_secondname_out);
+
+    function textarea_city_on() {
+
+        $('#id_city').css('background-color', '#adabaf');
+
+    }
+
+
+    function textarea_city_out() {
+
+        $('#id_city').css('background-color', 'white');
+
+    }
+    $('#id_city').focus(textarea_city_on);
+    $('#id_city').blur(textarea_city_out);
+
+    function textarea_email_on() {
+
+        $('#id_email').css('background-color', '#adabaf');
+
+    }
+
+
+    function textarea_email_out() {
+
+        $('#id_email').css('background-color', 'white');
+
+    }
+    $('#id_email').focus(textarea_email_on);
+    $('#id_email').blur(textarea_email_out);
+
+    function textarea_comments_on() {
+
+        $('#id_comments').css('background-color', '#adabaf');
+
+    }
+
+
+    function textarea_comments_out() {
+
+        $('#id_comments').css('background-color', 'white');
+
+    }
+    $('#id_comments').focus(textarea_comments_on);
+    $('#id_comments').blur(textarea_comments_out);
+</script>
+{% endblock %}

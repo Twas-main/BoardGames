@@ -1,0 +1,252 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url(Wood_Background.jpg);
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.navbar-fixed-top {
+    background-color: white;
+    color: black;
+    font-family: jost;
+    font-size: 25px;
+    
+}
+.nav.navbar-nav li a {
+    color: black;
+    border-radius: 5px;
+}
+
+.nav.navbar-nav li a:hover {
+    background: darkgrey;
+    color:white;
+    transition: .6s ease;
+}
+
+
+.jumbotron {
+    color: black;
+    background-color: rgba(173,171,175,.8);
+    height: auto;
+}
+
+
+.jumbotron h1{
+    display:block;
+    margin-left:41%;
+    font-family: pacifico;
+}
+.image {
+    display: inline-block;
+}
+.image img{
+    display: block;
+}
+.short_story {
+    color: black;
+    background-color: rgba(173,171,175,.8);
+    height: auto;
+    font-family: jost;
+    font-size:25px;
+    border-radius: 3%;
+}
+.story {
+    margin: 2%;
+}
+.text,.ps{
+    font-family: jost;
+    font-size:25px;
+}
+.cont{
+    margin-top:3%;
+    display:inline-flex;
+   
+}
+.contact {
+    color: black;
+    background-color: rgba(173,171,175,.8);
+    height: auto;
+    font-family: jost;
+    font-size: 25px;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 5px;
+}
+.map{
+    vertical-align: bottom;
+    left: 40%;
+    border: solid black 1px;
+}
+.res {
+    background-color: rgba(173,171,175,.8);
+    height: auto;
+    font-family: jost;
+    font-size: 25px;
+    margin: 2%;
+    padding:2%;
+}
+.friends {
+    padding: 2px;
+}
+.friends a{
+    color: black;
+    text-decoration: none;
+}
+.forma {
+    color: black;
+    background-color: rgba(173,171,175,.8);
+    height: auto;
+    font-family: jost;
+    font-size: 25px;
+    border-radius: 3%;
+    padding: 2%;
+}
+.button{
+    border-radius: 5%;
+    background-color: black;
+    color: white;
+    font-family: jost;
+    
+}
+textarea{
+    height: 60px;
+    width: 280px;
+    border-radius: 10px;
+}
+.nav-name {
+    color: black;
+    font-family: jost;
+    margin-right: 6px;
+    padding-top:5px;
+    font-size: 15px;
+}
+.reg {
+    color: black;
+    background-color: rgba(173,171,175,.8);
+    height: auto;
+    font-family: jost;
+    font-size: 25px;
+    border-radius: 3%;
+    padding: 2%;
+}
+.save.btn.btn-default{
+    background-color: black;
+    color: white;
+    font-family: jost;
+}
+.save.btn.btn-default:hover {
+    background: darkgrey;
+    color: white;
+    transition: .6s ease;
+}
+.blog {
+    color: black;
+    background-color: rgba(173,171,175,.8);
+    height: auto;
+    font-family: jost;
+    font-size: 25px;
+    border-radius: 3%;
+    padding: 2%;
+}
+.blog_full {
+    color: black;
+    background-color: rgba(173,171,175,.8);
+    height: auto;
+    font-family: jost;
+    font-size: 25px;
+    border-radius: 3%;
+    padding: 2%;
+    margin-top:10px;
+}
+.carousel.slide {
+    color: black;
+    background-color: rgba(173,171,175,.8);
+    height: auto;
+    font-family: jost;
+    font-size: 25px;
+    border-radius: 3%;
+}
+.carousel-caption {
+    color: black;
+    font-family: jost;
+}
+.btn.btn-default{
+    background-color: black;
+    color: white;
+}
+.btn.btn-default:hover {
+    background: darkgrey;
+    color: white;
+    transition: .6s ease;
+}
+.newposts {
+    color: black;
+    background-color: rgba(173,171,175,.8);
+    height: auto;
+    font-family: jost;
+    font-size: 25px;
+    border-radius: 3%;
+    padding: 2%;
+    margin-top: 10px;
+}
+.container{
+    max-width: 100%;
+}
+.navbar-collapse.collapse {
+    max-width: 100%;
+}
+.comments {
+    color: black;
+    background-color: rgba(173,171,175,.8);
+    height: auto;
+    font-family: jost;
+    font-size: 25px;
+    border-radius: 3%;
+    padding: 2%;
+}
+.conteiner.body-content {
+    color: black;
+    background-color: rgba(173,171,175,.8);
+    height: auto;
+    font-family: jost;
+    font-size: 25px;
+    border-radius: 3%;
+    padding: 2%;
+}

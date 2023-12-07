@@ -1,0 +1,16 @@
+﻿{% extends "app/layout.html" %}
+{% block content %}
+<div class="conteiner body-content">
+    <h1>{{ title }}</h1>
+    <hr />
+    <div>
+        <h2> Видео-ролик 1 </h2>
+        <VIDEO src="/media/video1.mp4" controls="controls" width="800" height="400" poster="/media/Kolonizatory_Baza_Novaya-Korobka00-320x320.jpg" preload="auto"></VIDEO>
+    </div>
+    <hr />
+    <div>
+        <h2> Видео-ролик 2 </h2>
+        <VIDEO src="/media/video22.mp4" controls="controls" width="800" height="400" poster="/media/Zvezdnie_Imperii_2ed-320x320.jpg"></VIDEO>
+    </div>
+</div>
+{% endblock %}

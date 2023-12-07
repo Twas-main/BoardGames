@@ -1,0 +1,31 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load static %}
+<div class="res">
+    <h2>Наши друзья</h2>
+    <ul class="fr">
+        <li>
+            <div class="friends">
+                <a href="https://hobbyworld.ru" target="_blank"> <img src="{% static 'app/content/hobby.png' %}" width="70" alt="Logo 1" /></a>
+                <a href="https://hobbyworld.ru">HobbyWorld</a>
+            </div>
+        </li>
+        <li>
+            <div class="friends">
+                <a href="https://gaga.ru/?etext=" target="_blank"> <img src="{% static 'app/content/logo_v2.png' %}" width="70" alt="Logo 1" /></a>
+                <a href="https://gaga.ru/?etext=">GaGa</a>
+            </div>
+        </li>
+        <li>
+            <div class="friends">
+                <a href="https://www.mosigra.ru" target="_blank"> <img src="{% static 'app/content/mosigra-logo.png' %}" width="70" alt="Logo 1" /></a>
+                <a href="https://www.mosigra.ru">Мосигра</a>
+            </div>
+        </li>
+    </ul>
+    
+</div>
+
+{% endblock %}
